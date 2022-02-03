@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/nameTV"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="Contact name"
+          android:textSize="23sp"
+          android:textStyle="bold"
+          android:layout_marginStart="5dp"
+          android:textColor="@color/black"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTV"
+            android:id="@+id/callBtn"
+            android:layout_marginStart="10sp"
+            android:text="CALL"
+            android:textSize="16dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTV"
+            android:id="@+id/smsBtn"
+            android:layout_toEndOf="@id/callBtn"
+            android:layout_marginStart="10sp"
+            android:text="SMS"
+            android:textSize="16dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTV"
+            android:id="@+id/emailBtn"
+            android:layout_toEndOf="@id/smsBtn"
+            android:layout_marginStart="10sp"
+            android:text="Email"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/detailIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/details"
+            android:layout_marginRight="20dp"
+            android:clickable="true" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

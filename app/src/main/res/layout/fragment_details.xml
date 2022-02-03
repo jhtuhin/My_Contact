@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jhtuhin.mycontact.DetailsFragment" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/photoIV"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personNameTV"
+        android:layout_below="@id/photoIV"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Person name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/personNameTV"
+        android:id="@+id/phoneTV"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        tools:text="Phone number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/phoneTV"
+        android:id="@+id/emailTV"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        tools:text="email"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/emailTV"
+        android:id="@+id/addressTV"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        tools:text="Address"/>
+
+
+</RelativeLayout>
